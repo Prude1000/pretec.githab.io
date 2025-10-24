@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FenixStore</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow p-4 flex items-center justify-between">
+    <div class="text-xl font-bold text-blue-600">FenixStore</div>
+    <input 
+      type="text" 
+      placeholder="Buscar productos..." 
+      class="w-1/2 p-2 border border-gray-300 rounded"
+    />
+    <button class="text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Carrito</button>
+  </nav>
+
+  <!-- Productos -->
+  <div class="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    
+    <!-- Producto -->
+    <div class="bg-white rounded-xl shadow p-4 flex flex-col">
+      <img src="imagenes/DHXVR1B04IV20.png" alt="Camara" class="rounded mb-4">
+      <h2 class="text-lg font-semibold mb-2">DVR de 4 CH</h2>
+      <p class="text-gray-700 mb-2">Bs 560.00</p>
+
+    </div>
+
+    <!-- Puedes duplicar este bloque para más productos -->
+    <div class="bg-white rounded-xl shadow p-4 flex flex-col">
+      <img src="imagenes/cascafrut.png" alt="Producto" class="rounded mb-4">
+      <h2 class="text-lg font-semibold mb-2">Cascafrut</h2>
+      <p class="text-gray-700 mb-2">Bs 10.00</p>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
