@@ -1,90 +1,143 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pertec</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
 
-	<head>
-		<meta charset="UTF-8">
-		<title>ElectroVision</title>
-		<link rel="shortcut icon" type="image/x-icon" href="imagenes/pru.jpg">
-		<!--algo esta mal en este enlace-->
-		<link rel="stylesheet" type="text/css" href="esturc.css">
-		<!--pero tambien funciona con este-->
-		<link rel="stylesheet" href="whatsapp.css">
-		<style>
-		@import "jaja.css";
-		</style>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md p-4 flex items-center justify-between">
+    <div class="flex items-center space-x-2">
+      <img src="https://via.placeholder.com/40" alt="Logo" class="w-10 h-10 rounded">
+      <h1 class="text-xl font-bold text-blue-700">Pertec</h1>
+    </div>
+    <ul class="flex space-x-6 font-medium">
+      <li><button class="nav-btn text-blue-600" data-section="inicio">Inicio</button></li>
+      <li><button class="nav-btn hover:text-blue-600" data-section="productos">Productos</button></li>
+      <li><button class="nav-btn hover:text-blue-600" data-section="contacto">Contacto</button></li>
+    </ul>
+  </nav>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+  <!-- Contenido -->
+  <main class="p-6 max-w-7xl mx-auto">
 
-			<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	</head>
-	
-	<body>
-		<div class="contenedor">
-			<header>
-				<div class="logotipo">
-					<img src="imagenes/logo_pagina.gif" width="100%" alt="">
-				</div>
-				
-				<nav>
-					<ul>
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="camaras.html">Viguetas</a></li>
-						<li><a href="fotos.html">Seguridad Alarmas</a></li>
-						<li><a href="contacto.html">Contacto</a></li>
-					</ul>
-				</nav>		
-			</header>
-			<section class="main">
-				<section class="articles">
-					<article>
-						<img src="imagenes/cam1.jpg" width="100%" alt="im_emblema" title="buo"><br><br>
+    <!-- Sección Inicio -->
+    <section id="inicio" class="section">
+      <div class="bg-white rounded-xl shadow p-8 text-center">
+        <h2 class="text-3xl font-bold text-blue-700 mb-4">Bienvenido a Viguetas Bolivia</h2>
+        <p class="text-gray-600 mb-4">
+          Somos especialistas en fabricación y venta de viguetas pretensadas de alta resistencia. 
+          Ofrecemos productos de calidad para construcciones seguras y duraderas.
+        </p>
+        <img src="https://via.placeholder.com/900x400?text=Viguetas+Pretensadas" alt="Viguetas" class="rounded-xl mx-auto shadow">
+      </div>
+    </section>
 
-						<h2>TIPOS DE VIGUETAS</h2>
-						<br>
-						<p>Hoy en día, disponer de un sistema de videovigilancia o de cámaras de seguridad es una solución óptima para mantener alejados a los ladrones y proteger el hogar y sus habitantes. El constante progreso de la tecnología ha llevado al sector de la seguridad, especialmente en los últimos años, a ofrecer al mercado productos cada vez más eficientes, para todas las necesidades y a precios muy competitivos.
+    <!-- Sección Productos -->
+    <section id="productos" class="section hidden">
+      <h2 class="text-2xl font-bold text-blue-700 mb-6 text-center">Nuestros Productos</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        
+        <!-- Producto -->
+        <div class="bg-white shadow rounded-xl p-4 flex flex-col">
+          <img src="https://via.placeholder.com/400x250?text=Vigueta+de+Hormigón" alt="Vigueta de Hormigón" class="rounded mb-4">
+          <h3 class="font-semibold text-lg mb-2">Vigueta de Hormigón Pretensados 5m</h3>
+          <p class="text-gray-600 mb-2">Ideal para techos y entrepisos. Alta resistencia y durabilidad.</p>
+          <p class="font-bold text-blue-600 mb-4">$25 / unidad</p>
+          <button onclick="cotizar('Vigueta de Hormigón 5m')" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 mt-auto flex items-center justify-center">
+            <i data-feather='message-circle' class='mr-2'></i> Cotizar por WhatsApp
+          </button>
+        </div>
 
-Podemos satisfacer nuestra seguridad desde una simple cámara de vigilancia que la podemos comprar a un precio económico a sistemas realmente complejos y que destacan por su eficacia y domótica.</p>
-						
-					</article>
-					<article>
-						<img src="imagenes/monitor1.jpg" width="100%" alt="mochila" title="buo"><br><br>
-						<h2>este es el titulo de mi sitio web</h2><br>
-						<p>Años atrás, la videovigilancia se basaba en costosas tecnologías analógicas de CCTV (circuito cerrado de televisión), que por su costo sólo estaban disponibles a nivel corporativo. Hoy, la digitalización y la revolución de la conectividad mejoran y hacen más accesible lo último en seguridad.
+        <div class="bg-white shadow rounded-xl p-4 flex flex-col">
+          <img src="https://via.placeholder.com/400x250?text=Vigueta+de+Acero" alt="Vigueta de Acero" class="rounded mb-4">
+          <h3 class="font-semibold text-lg mb-2">Vigueta de Acero 4m</h3>
+          <p class="text-gray-600 mb-2">Estructura metálica de gran capacidad de carga.</p>
+          <p class="font-bold text-blue-600 mb-4">$40 / unidad</p>
+          <button onclick="cotizar('Vigueta de Acero 4m')" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 mt-auto flex items-center justify-center">
+            <i data-feather='message-circle' class='mr-2'></i> Cotizar por WhatsApp
+          </button>
+        </div>
 
-Y lo mejor de todo es que las modernas cámaras se convierten en ojos siempre despiertos que podemos revisar y controlar desde la comodidad de un móvil.
+        <div class="bg-white shadow rounded-xl p-4 flex flex-col">
+          <img src="https://via.placeholder.com/400x250?text=Bloques+y+Complementos" alt="Bloques" class="rounded mb-4">
+          <h3 class="font-semibold text-lg mb-2">Bloques y Complementos</h3>
+          <p class="text-gray-600 mb-2">Accesorios ideales para el montaje de viguetas.</p>
+          <p class="font-bold text-blue-600 mb-4">$1.50 / unidad</p>
+          <button onclick="cotizar('Bloques y Complementos')" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 mt-auto flex items-center justify-center">
+            <i data-feather='message-circle' class='mr-2'></i> Cotizar por WhatsApp
+          </button>
+        </div>
+      </div>
+    </section>
 
-Después de conocerlas, sólo queda tomar la decisión de proteger a tu casa y a tu familia.</p>
-					</article>
-				</section>
-				
-				<aside>
-					<h3>MONITOREO</h3><hr><br><br>
-					<div class="pru">
-				    <p>Con la tecnología el mercado nos ofrece una amplia gama de posibilidades, desde las más modernas con wifi hasta las que simplemente son para aparentar, y los diferentes tipos de cámaras de vigilancia según sus funciones y capacidades:</p>
-				    <br><br>
-					<img src="imagenes/sirena1.jpg" width="100%" alt="mochila" title="buo">
-					<br>
-					
-					</div>
-				</aside>
-			</section>
-			<footer>
-			copyright© 2021-2025 Electro Vision Derechos Reservados
-			</footer>
-		</div>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://api.whatsapp.com/send?phone=59168116506&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20viguetas." class="float" target="_blank">
-<i class="fa fa-whatsapp my-float"></i>
-</a>
-	</body>
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section hidden">
+      <h2 class="text-2xl font-bold text-blue-700 mb-6 text-center">Contáctanos</h2>
+      <div class="bg-white rounded-xl shadow p-6 max-w-xl mx-auto">
+        <form class="space-y-4">
+          <div>
+            <label class="block text-gray-700 font-medium">Nombre</label>
+            <input type="text" class="w-full border border-gray-300 rounded p-2" placeholder="Tu nombre">
+          </div>
+          <div>
+            <label class="block text-gray-700 font-medium">Correo electrónico</label>
+            <input type="email" class="w-full border border-gray-300 rounded p-2" placeholder="tucorreo@ejemplo.com">
+          </div>
+          <div>
+            <label class="block text-gray-700 font-medium">Mensaje</label>
+            <textarea class="w-full border border-gray-300 rounded p-2" rows="4" placeholder="Escribe tu consulta..."></textarea>
+          </div>
+          <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+            Enviar mensaje
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow mt-10 p-4 text-center text-gray-600">
+    © 2025 Pertec - Bolivia. Todos los derechos reservados.
+  </footer>
+
+  <script>
+    // Cambiar entre pestañas
+    const navBtns = document.querySelectorAll('.nav-btn');
+    const sections = document.querySelectorAll('.section');
+
+    navBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.getAttribute('data-section');
+        sections.forEach(s => s.classList.add('hidden'));
+        document.getElementById(target).classList.remove('hidden');
+
+        navBtns.forEach(b => b.classList.remove('text-blue-600'));
+        btn.classList.add('text-blue-600');
+      });
+    });
+
+    // 🔗 Función para enviar mensaje a WhatsApp
+    function cotizar(producto) {
+      const numero = "59170000000"; // 🔹 Cambia esto por tu número (ejemplo: 5917XXXXXXX)
+      const mensaje = `Hola 👋, quiero solicitar una cotización para el producto: *${producto}*`;
+      const url = `https://wa.me/${59168116506}?text=${encodeURIComponent(mensaje)}`;
+      window.open(url, "_blank");
+    }
+
+    feather.replace(); // Carga los íconos
+  </script>
+
+</body>
+</html>
+
 	
 
 
 </html>
+
 
